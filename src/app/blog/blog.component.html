@@ -1,0 +1,27 @@
+<header class="masthead" [style.backgroundImage]="'url(' + imageUrl + ')'">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{ data["title"] }}</h1>
+            <h2 class="subheading">{{ data["sub"] }}</h2>
+            <span class="meta"
+              >Posted by
+              <a href="#">Start Bootstrap</a>
+              on {{ data["date"] }}</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>{{ data["filler"] }}</p>
+        </div>
+      </div>
+    </div>
+  </article>

@@ -1,0 +1,40 @@
+<!-- Page Header -->
+<header class="masthead" [style.backgroundImage]="'url(' + imageUrl + ')'">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Clean Blog</h1>
+            <span class="subheading">A Blog Theme by Start Bootstrap</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview" *ngFor="let item of data; index as i">
+          <a href="#" routerLink="/blog/{{ i }}">
+            <h2 class="post-title">
+              {{ item["title"] }}
+            </h2>
+            <h3 class="post-subtitle">
+              {{ item["sub"] }}
+            </h3>
+          </a>
+          <p class="post-meta">
+            Posted by
+            <a href="#">Start Bootstrap</a>
+            on {{ item["date"] }}
+          </p>
+        </div>
+        <hr />
+      </div>
+    </div>
+  </div>
+  
+  <hr />
